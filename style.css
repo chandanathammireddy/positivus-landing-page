@@ -1,0 +1,643 @@
+/* style.css */
+
+/* Custom background color for the overall container (the light gray/off-white look) */
+.custom-bg-light {
+    background-color: #fdf8f8; /* A very light gray */
+}
+
+/* Custom styling for the Positivus logo */
+.logo-icon {
+    /* To make the 'X' look like the image, though it's hard to replicate 
+       the exact graphic purely with CSS text. */
+    color: #000; 
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-right: 0.25rem;
+}
+
+/* Style for the navigation links */
+.nav-link {
+    color: #333 !important; /* Ensures the link color is dark */
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #000 !important; /* Darker on hover */
+}
+
+/* Style the client logos */
+.logo-style {
+    opacity: 0.6; /* Makes the logos appear slightly faded as in the image */
+    max-height: 40px; /* Constrains the logo height */
+    width: auto;
+    margin: 1rem 0; /* Add some vertical space for smaller screens */
+}
+
+/* Placeholder for the illustration to maintain spacing */
+.illustration-placeholder {
+    width: 100%;
+    max-width: 400px; /* Adjust size as needed */
+    height: 350px;
+    /* Optional: Add a light border or color to distinguish the placeholder area */
+    /* background-color: #e8e8e8; */
+}
+.mike-image {
+    border-radius: 100%;
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Adjust button text size for the "Book a consultation" button for a more prominent look */
+
+.btn-lg {
+    font-size: 1rem;
+}
+
+/* Remove border radius from the "Book a consultation" button */
+.btn-dark {
+    border-radius: 0 !important;
+}
+
+/* Custom Color Variables to match the image */
+:root {
+    --green-light: #d8f5d6; /* Light gray background */
+    --green-accent: #6ee62f; /* Bright green for cards 2 and 5 */
+    --black-accent: #111111; /* Black for cards 3 and 6 */
+    --gray-card: #f3f3f3; /* Very light gray for card 1 and 4 */
+}
+
+/* Base Body Style */
+body {
+    background-color: var(--white); /* Overall light gray/green background */
+}
+
+/* Services Section Container */
+.services-section {
+    max-width: 1000px; /* Limit the width of the content area */
+}
+
+/* Header 'Services' Tag Styling */
+.service-title {
+    background-color: var(--green-accent) !important;
+    color: var(--black-accent);
+}
+
+/* Service Card General Styling */
+.service-card {
+    border: 1px solid rgba(0, 0, 0, 5);
+    border-radius: 20px; /* Extreme rounded corners */
+    min-height: 250px; /* Set a fixed height for consistency */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push content to top and bottom */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Card Hover Effect */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Card Color Assignments (Approximate to the image) */
+.service-1-color, .service-4-color {
+    background-color: var(--gray-card); /* Light Card */
+}
+
+.service-2-color, .service-5-color {
+    background-color: var(--green-accent); /* Green Card */
+    color: var(--black-accent);
+}
+
+.service-3-color, .service-6-color {
+    background-color: var(--black-accent); /* Black Card */
+    color: #fff;
+}
+
+/* Card Title Styling */
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 5rem; /* Space between title and illustration/link */
+}
+
+/* Learn More Link Styling */
+.learn-more-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--black-accent); /* Default link color */
+    background-color: #fff; /* White background for the link button/icon */
+    padding: 8px 15px;
+    border-radius: 50px;
+}
+
+/* Override Learn More Link Color for Black Cards */
+.service-card.text-white .learn-more-link {
+    color: var(--black-accent); /* Text inside the link is always dark */
+}
+
+/* Styling for the Arrow Icon inside the link */
+.learn-more-link i {
+    background-color: var(--green-accent); /* Green background for the arrow circle */
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 0.8rem;
+    line-height: 1; /* Center the icon */
+    margin-right: 8px;
+}
+
+/* Placeholder for the custom illustration graphic */
+.illustration-placeholder {
+    /* You would use background-image here to insert the actual graphics */
+    /* Example: background-image: url('path/to/seo-graphic.svg'); */
+    height: 90px; /* Example height for the graphic */
+    max-width: 30%;
+    right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    /* This section is where the graphics seen in the image would be implemented */
+}
+
+/* --- CTA Section Custom Styling --- */
+
+/* Overall Container and Background */
+.cta-section {
+    background-color: #ffffff; /* white background */
+    margin-top: 30px; /* Space it out from the section above */
+    padding-top: 40px !important;
+    padding-bottom: 80px !important;
+}
+
+.cta-container {
+    max-width: 1100px;
+    background-color: #e0dddd; /* White background inside the CTA block */
+    border-radius: 25px; /* Large rounded corners for the entire block */
+    overflow: hidden; /* Crucial for clipping the absolute illustration */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    padding: 40px; /* Inner padding */
+}
+
+/* Text and Heading */
+.cta-heading {
+    font-size: 2.5rem;
+    color: #111111;
+}
+
+.cta-text {
+    font-size: 1.1rem;
+}
+
+
+/* The Custom Button Style */
+.cta-button {
+    /* Color to match the dark box in the image */
+    background-color: #1a1a1a; 
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px; /* Slightly rounded corners */
+    padding: 12px 30px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+
+/* --- Illustration Positioning --- */
+
+/* Illustration Wrapper: Creates context for absolute positioning */
+.cta-illustration-wrapper {
+    position: relative;
+    /* Ensure the illustration box takes full height */
+    min-height: 250px; 
+}
+
+/* The actual image tag */
+.cta-illustration {
+    /* **CRITICAL: Set the position and size** */
+    position: absolute;
+    width: 50%; /* Size the illustration */
+    height: auto;
+    object-fit: contain;
+
+    /* Move the illustration to the right and slightly down/center */
+    left: 30%; 
+    top: -5px; 
+}
+
+/* --- Case Studies Section Styling --- */
+
+:root {
+    /* Assuming this green is the same as the service card green */
+    --main-green: #6ee62f; 
+    --dark-box-bg: #111a1a; /* Very dark, near-black background */
+    --text-color-light: #f0f0f0;
+}
+
+/* Header Tag Styling */
+.case-studies-title {
+    background-color: var(--main-green);
+    color: var(--dark-box-bg);
+    font-size: 1.1rem;
+    padding: 5px 10px;
+}
+
+.case-studies-header {
+    max-width: 1000px;
+}
+
+/* The Main Dark Box */
+.case-study-box {
+    background-color: var(--dark-box-bg);
+    color: var(--text-color-light);
+    border-radius: 40px; /* Very rounded corners */
+}
+
+/* Individual Column Styling */
+.case-study-item {
+    padding: 0 20px; /* Internal padding for text */
+}
+
+/* Text Styling */
+.case-study-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    min-height: 120px; /* Ensures all three boxes have the same height */
+}
+
+/* Custom Link Style for Dark Background */
+.learn-more-link-dark {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--main-green); /* Green text for the link */
+    transition: color 0.2s;
+}
+
+.learn-more-link-dark:hover {
+    color: #a0ff60; /* Slightly lighter green on hover */
+}
+
+/* Styling for the Arrow Icon */
+.learn-more-link-dark i {
+    color: var(--main-green); /* Arrow color */
+    font-size: 1rem;
+    transition: transform 0.2s;
+}
+
+.learn-more-link-dark:hover i {
+    transform: translateX(3px); /* Small slide effect on hover */
+}
+
+/* Override Bootstrap's border color for the dividers to match the subtle line */
+.border-success-subtle {
+    border-color: rgba(255, 255, 255, 0.2) !important; /* Semi-transparent white line */
+}
+
+/* --- Working Process Section Styling --- */
+
+:root {
+    --main-green: #6ee62f; /* Bright green */
+    --light-gray: #ebe7e7; /* Light background for inactive items */
+    --dark-text: #111111;
+}
+
+/* Header Tag Styling */
+.process-title {
+    background-color: var(--main-green);
+    color: var(--dark-text);
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.process-header {
+    max-width: 1000px;
+}
+
+/* Main Accordion Container */
+.process-container {
+    max-width: 800px; /* Make the process block narrower than other sections */
+}
+
+/* Individual Accordion Item Styling */
+.process-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px; /* Space between items */
+    border-radius: 15px !important; /* Large rounded corners */
+    overflow: hidden; /* Ensures borders are contained */
+    background-color: var(--light-gray);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Accordion Button (The Clickable Header) */
+.accordion-button {
+    background-color: var(--light-gray) !important;
+    color: var(--dark-text);
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 15px !important;
+    border: none !important;
+    box-shadow: none !important; /* Remove Bootstrap shadow on focus */
+    transition: background-color 0.2s;
+}
+
+/* Hover effect for inactive items */
+.accordion-button:not(.collapsed):hover,
+.accordion-button.collapsed:hover {
+    background-color: #f0f0f0 !important;
+}
+
+/* Active (Open) Accordion Item and Button Styling */
+.process-item.green-active {
+    background-color: var(--main-green);
+}
+
+.process-item.green-active .accordion-button:not(.collapsed) {
+    background-color: var(--main-green) !important;
+    color: rgb(14, 13, 13); /* Text color in active state */
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.process-item.green-active .accordion-body {
+    background-color: var(--main-green);
+    color: rgb(9, 8, 8);
+    padding-top: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3); /* Separator line */
+}
+
+/* Step Number Styling (e.g., "01") */
+.step-number {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-right: 25px;
+    color: var(--dark-text);
+}
+.process-item.green-active .step-number {
+    color: rgb(11, 10, 10);
+}
+
+/* Customizing the Bootstrap Icon (Plus/Minus) */
+
+/* Default state (Plus icon) */
+.accordion-button::after {
+    background-image: none !important; /* Remove default icon */
+    content: '+';
+    font-size: 1.5rem;
+    font-weight: 900;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; /* Push icon to the right */
+    border-radius: 50%;
+    border: 2px solid var(--dark-text);
+    color: var(--dark-text);
+    transform: none; /* Disable default rotation */
+}
+
+/* Collapsed state (Minus icon) */
+.accordion-button:not(.collapsed)::after {
+    content: '-';
+    border: 2px solid rgb(16, 12, 12);
+    color: rgb(23, 21, 21);
+}
+
+/* Override for the active item's icon */
+.process-item.green-active .accordion-button:not(.collapsed)::after {
+    border: 2px solid rgb(19, 14, 14);
+    color: rgb(19, 18, 18);
+}
+
+/* --- Team Section Custom Styling --- */
+
+:root {
+    --main-green: #6ee62f; 
+    --light-gray-bg: #f8f8f8;
+    --card-border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Header Tag Styling */
+.team-title {
+    background-color: var(--main-green);
+    color: #111111;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.team-header {
+    max-width: 1000px;
+}
+
+/* Main Team Container */
+.team-container {
+    max-width: 1200px;
+}
+
+/* Team Card Styling */
+.team-card {
+    border: 1px solid var(--card-border-color);
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s;
+}
+
+.team-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Photo Wrapper (The Green Clover Shape) */
+.team-photo-wrapper {
+    /* Set dimensions for the container */
+    width: 60px;
+    height: 60px;
+    
+    /* Simulate the clover/flower shape using a complex border-radius */
+    /* This shape is tricky to replicate perfectly in simple CSS, this is an approximation */
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    
+    background-color: var(--main-green);
+    overflow: hidden;
+    position: relative;
+    /* Center the image within the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Profile Photo Image */
+.team-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Slightly darkens the image inside the green shape */
+    filter: brightness(0.9); 
+}
+
+/* LinkedIn Icon Styling */
+.linkedin-icon {
+    background-color: var(--main-green);
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.linkedin-icon:hover {
+    background-color: #38b000; /* Darker green on hover */
+}
+
+/* Text Styles */
+.team-name {
+    font-size: 1.1rem;
+    color: #111111;
+}
+
+.team-title-text {
+    font-size: 0.9rem;
+    color: #6c757d !important;
+}
+
+.team-experience {
+    font-size: 0.95rem;
+    color: #343a40;
+    line-height: 1.5;
+}
+
+/* See All Team Button */
+.team-button {
+    background-color: #111111;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+/* --- Testimonials Section Styling --- */
+
+:root {
+    --main-green: #6ee62f; 
+    --dark-box-bg: #111a1a; /* Very dark, near-black background */
+    --quote-bubble-bg: #222222; /* Slightly lighter black for the quote bubble */
+    --text-color-light: #f0f0f0;
+}
+
+/* Header Tag Styling */
+.testimonials-title {
+    background-color: var(--main-green);
+    color: var(--dark-box-bg);
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.testimonials-header {
+    max-width: 1000px;
+}
+
+/* Main Dark Box */
+.testimonial-box {
+    background-color: var(--dark-box-bg);
+    color: var(--text-color-light);
+    border-radius: 40px; /* Very rounded corners */
+    padding-bottom: 80px !important; /* Extra padding for controls at bottom */
+}
+
+/* Quote Bubble Style */
+.quote-bubble {
+    background-color: var(--quote-bubble-bg);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    color: white;
+}
+
+/* Author Text */
+.author-info {
+    color: var(--text-color-light);
+    line-height: 1.2;
+}
+.author-title {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- Carousel Customization --- */
+
+/* Controls (Arrows) Styling */
+.custom-control-btn {
+    position: absolute;
+    top: auto; /* Remove vertical positioning */
+    bottom: 0; /* Align to the bottom of the testimonial-box */
+    width: auto;
+    opacity: 1; /* Make controls fully visible */
+    padding: 0 30px;
+    height: 50px;
+}
+
+.custom-control-btn .carousel-control-prev-icon i,
+.custom-control-btn .carousel-control-next-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.custom-control-btn:hover {
+    opacity: 0.8;
+}
+
+.carousel-control-prev {
+    left: 20px;
+}
+
+.carousel-control-next {
+    right: 20px;
+}
+
+/* Pagination Dots (Indicators) Styling */
+.carousel-indicators.custom-indicators {
+    position: absolute;
+    bottom: 20px; /* Position them above the control buttons */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    justify-content: center;
+}
+
+.carousel-indicators.custom-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    transition: background-color 1s;
+}
+
+.carousel-indicators.custom-indicators button.active {
+    background-color: var(--main-green); /* Green active dot */
+}
