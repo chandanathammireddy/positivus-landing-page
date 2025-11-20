@@ -532,75 +532,198 @@
 
 <!-- Testimonials Section -->
 
-<section class="testimonials-section py-5">
-    <div class="container testimonials-header mb-4">
-        <span class="testimonials-title px-3 py-1 fw-bold rounded-2">Testimonials</span>
-        <p class="mt-3 text-muted">Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p>
+
+    <!-- Testimonial Carousel Box -->
+    
+<section class="container my-5">
+
+    <!-- Heading Section -->
+    <div class="row mb-4 align-items-center">
+        <div class="col-md-4">
+            <span class="badge testimonial-tag">Testimonials</span>
+        </div>
+        <div class="col-md-8">
+            <h6 class="subtitle-text">
+                Hear from Our Satisfied Clients: Read Our Testimonials <br>
+                to Learn More About Our Digital Marketing Services
+            </h6>
+        </div>
     </div>
 
-    <div class="container testimonials-container">
-        <div class="testimonial-box text-white p-5 rounded-4 shadow-lg">
-            
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
-                
-                <div class="carousel-inner">
-                    
-                    <div class="carousel-item active">
-                        <div class="row justify-content-center">
-                            
-                            <div class="col-lg-8 col-md-10 testimonial-quote-col">
-                                <div class="quote-bubble p-4">
-                                    <p class="quote-text mb-4">
-                                        "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."
-                                    </p>
-                                </div>
-                                
-                                <div class="author-info text-center mt-4">
-                                    <h6 class="author-name fw-bold mb-0">John Smith</h6>
-                                    <p class="author-title mb-0">Marketing Director at XYZ Corp</p>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
+    <!-- Black rounded container -->
+    <div class="testimonial-wrapper">
 
-                    <div class="carousel-item">
-                         <div class="row justify-content-center">
-                            <div class="col-lg-8 col-md-10 testimonial-quote-col">
-                                <div class="quote-bubble p-4">
-                                    <p class="quote-text mb-4">
-                                        "The team at Positivus completely revamped our SEO strategy. We moved from page 3 to the first page for several high-value keywords within six months. Their reporting is clear and their communication is excellent."
-                                    </p>
-                                </div>
-                                <div class="author-info text-center mt-4">
-                                    <h6 class="author-name fw-bold mb-0">Alice Johnson</h6>
-                                    <p class="author-title mb-0">CEO, Tech Solutions</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    </div>
-                
-                <div class="carousel-indicators custom-indicators">
-                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                </div>
-                
-                <button class="carousel-control-prev custom-control-btn" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
+        <!-- Horizontal container for 3 cards -->
+        <div class="scroll-row">
 
-                <button class="carousel-control-next custom-control-btn" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-
+            <!-- Left (partially visible) -->
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    "We have been working with Positivus for the past year and have seen a significant
+                    increase in website traffic..."
+                </p>
+                <p class="client-name">John Smith</p>
+                <p class="client-role">Marketing Director at XYZ Corp</p>
             </div>
+
+            <!-- Center (fully visible) -->
+            <div class="testimonial-card center-card">
+                <p class="testimonial-text">
+                    "We have been working with Positivus for the past year and have seen a significant increase
+                    in website traffic and leads as a result of their efforts. The team is professional,
+                    responsive, and truly cares about the success of our business. We highly recommend Positivus
+                    to any company looking to grow their online presence."
+                </p>
+                <p class="client-name">John Smith</p>
+                <p class="client-role">Marketing Director at XYZ Corp</p>
             </div>
+
+            <!-- Right (partially visible) -->
+            <div class="testimonial-card">
+                <p class="testimonial-text">
+                    "The team is professional, responsive, and truly cares about the success of our business..."
+                </p>
+                <p class="client-name">John Smith</p>
+                <p class="client-role">Marketing Director at XYZ Corp</p>
+            </div>
+
+        </div>
+
+        <!-- Bottom navigation (NOT functional, only design) -->
+        <div class="nav-row">
+            <span class="nav-arrow">&#8592;</span>
+
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <span class="nav-arrow">&#8594;</span>
+        </div>
+
     </div>
 </section>
+
+<!-- Contact Form Section -->
+
+
+
+    <div class="contact-page-container">
+        <header class="contact-header">
+            <h1 class="contact-us-title">Contact Us</h1>
+            <p class="contact-subtitle">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
+        </header>
+
+        <div class="form-card">
+            <form action="#" method="POST">
+                <div class="intent-options">
+                    <label class="radio-label">
+                        <input type="radio" name="intent" value="say-hi" checked>
+                        Say Hi
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="intent" value="get-quote">
+                        Get a Quote
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+
+            <div class="decorative-elements">
+                <div class="star-burst"></div>
+                <div class="small-green-star"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-- Footer Section -->
+
+<body>
+
+    <div style="height: 50vh; background-color: #f8f9fa;"></div>
+
+    <footer class="positivus-footer bg-black text-white py-4">
+        <div class="container-fluid px-0.2 pt-4">
+            <div class="row align-items-center pb-4 border-bottom border-secondary-subtle">
+                <div class="col-md-5 d-flex align-items-center">
+                    <div class="logo-area d-flex align-items-center me-4">
+                        <img src="placeholder-logo.svg" alt="Positivus Logo" class="footer-logo me-2">
+                        <span class="fs-4 fw-bold">Positivus</span>
+                    </div>
+                </div>
+                
+                <div class="col-md-7 d-flex justify-content-start justify-content-md-end align-items-center mt-4 mt-md-0">
+                    <form class="d-flex newsletter-form justify-content-end">
+                        <input type="email" class="form-control newsletter-input" placeholder="Email" aria-label="Email">
+                    </form>
+                    <nav class="nav me-4 d-none d-md-flex">
+                        <a class="nav-link text-white-50 px-3 py-0 footer-link" href="#">About us</a>
+                        <a class="nav-link text-white-50 px-3 py-0 footer-link" href="#">Services</a>
+                        <a class="nav-link text-white-50 px-3 py-0 footer-link" href="#">Use Cases</a>
+                        <a class="nav-link text-white-50 px-3 py-0 footer-link" href="#">Pricing</a>
+                        <a class="nav-link text-white-50 px-3 py-0 footer-link" href="#">Blog</a>
+                    </nav>
+                    
+                    <div class="social-icons">
+                        <a href="#" class="text-white-50 me-2"><i class="fab fa-linkedin-in social-icon-circle"></i></a>
+                        <a href="#" class="text-white-50 me-2"><i class="fab fa-twitter social-icon-circle"></i></a>
+                        <a href="#" class="text-white-50"><i class="fab fa-facebook-f social-icon-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row py-5 align-items-start">
+                <div class="col-md-5 contact-info-col">
+                    <div class="contact-title-box mb-3">
+                        Contact us:
+                    </div>
+                    <p class="mb-1">Email: **info@positivus.com**</p>
+                    <p class="mb-1">Phone: 555-567-8901</p>
+                    <p class="mb-1">Address: 1234 Main St<br>Moonstone City, Stardust State 12345</p>
+                </div>
+
+                <div class="col-md-7 d-flex justify-content-start justify-content-md-end align-items-center mt-4 mt-md-0">
+                    <form class="d-flex newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control newsletter-input" placeholder="Email" aria-label="Email">
+                            <button class="btn subscribe-button" type="submit">Subscribe to news</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row pt-3 pb-3 border-top border-secondary-subtle">
+                <div class="col-12 d-flex justify-content-between align-items-center copyright-row">
+                    <p class="mb-0 text-white-50 copyright-text">© 2023 Positivus. All Rights Reserved.</p>
+                    <a href="#" class="text-white-50 privacy-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
 <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

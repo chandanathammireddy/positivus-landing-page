@@ -35,18 +35,14 @@
 
 /* Placeholder for the illustration to maintain spacing */
 .illustration-placeholder {
-    width: 100%;
-    max-width: 400px; /* Adjust size as needed */
-    height: 350px;
+    
+    width: 400%;
+    height: 400px;
+    
     /* Optional: Add a light border or color to distinguish the placeholder area */
     /* background-color: #e8e8e8; */
 }
-.mike-image {
-    border-radius: 100%;
-    width: 200px;
-    height: auto;
-    object-fit: cover;
-}
+
 
 /* Adjust button text size for the "Book a consultation" button for a more prominent look */
 
@@ -74,7 +70,7 @@ body {
 
 /* Services Section Container */
 .services-section {
-    max-width: 1000px; /* Limit the width of the content area */
+    max-width: 1000px;/* Limit the width of the content area */
 }
 
 /* Header 'Services' Tag Styling */
@@ -509,7 +505,7 @@ body {
 }
 
 .linkedin-icon:hover {
-    background-color: #38b000; /* Darker green on hover */
+    background-color: #6ee62f; /* Darker green on hover */
 }
 
 /* Text Styles */
@@ -540,104 +536,528 @@ body {
 
 /* --- Testimonials Section Styling --- */
 
-:root {
-    --main-green: #6ee62f; 
-    --dark-box-bg: #111a1a; /* Very dark, near-black background */
-    --quote-bubble-bg: #222222; /* Slightly lighter black for the quote bubble */
-    --text-color-light: #f0f0f0;
+body {
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
 }
 
-/* Header Tag Styling */
-.testimonials-title {
-    background-color: var(--main-green);
-    color: var(--dark-box-bg);
-    font-size: 1.1rem;
-    padding: 5px 10px;
-    border-radius: 5px;
+/* Heading Badge */
+.testimonial-tag {
+    background: #6ee62f;
+    color: black;
+    font-size: 26px;
+    padding: 5px 20px;
+    border-radius: 8px;
 }
 
-.testimonials-header {
-    max-width: 1000px;
+/* Subtitle */
+.subtitle-text {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.4;
 }
 
-/* Main Dark Box */
-.testimonial-box {
-    background-color: var(--dark-box-bg);
-    color: var(--text-color-light);
-    border-radius: 40px; /* Very rounded corners */
-    padding-bottom: 80px !important; /* Extra padding for controls at bottom */
-}
-
-/* Quote Bubble Style */
-.quote-bubble {
-    background-color: var(--quote-bubble-bg);
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+/* Black rounded background box */
+.testimonial-wrapper {
+    background: #0b0b0b;
+    border-radius: 40px;
+    padding: 50px 20px;
     position: relative;
-    color: white;
 }
 
-/* Author Text */
-.author-info {
-    color: var(--text-color-light);
-    line-height: 1.2;
-}
-.author-title {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.7);
-}
-
-/* --- Carousel Customization --- */
-
-/* Controls (Arrows) Styling */
-.custom-control-btn {
-    position: absolute;
-    top: auto; /* Remove vertical positioning */
-    bottom: 0; /* Align to the bottom of the testimonial-box */
-    width: auto;
-    opacity: 1; /* Make controls fully visible */
-    padding: 0 30px;
-    height: 50px;
-}
-
-.custom-control-btn .carousel-control-prev-icon i,
-.custom-control-btn .carousel-control-next-icon i {
-    font-size: 1.5rem;
-    color: white;
-}
-
-.custom-control-btn:hover {
-    opacity: 0.8;
-}
-
-.carousel-control-prev {
-    left: 20px;
-}
-
-.carousel-control-next {
-    right: 20px;
-}
-
-/* Pagination Dots (Indicators) Styling */
-.carousel-indicators.custom-indicators {
-    position: absolute;
-    bottom: 20px; /* Position them above the control buttons */
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
+/* Horizontal row */
+.scroll-row {
+    display: flex;
     justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    overflow: hidden;       /* hides right and left parts */
+    padding: 20px;
 }
 
-.carousel-indicators.custom-indicators button {
+/* Testimonial cards */
+.testimonial-card {
+    border: 2px solid #a1ff2e;
+    width: 350px;
+    border-radius: 30px;
+    padding: 25px;
+    color: white;
+    position: relative;
+}
+
+/* Center card is wider, matches screenshot */
+.center-card {
+    width: 500px;
+}
+
+/* Neon speech bubble tail */
+.testimonial-card::after {
+    content: "";
+    position: absolute;
+    bottom: -18px;
+    left: 40%;
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 18px solid #a1ff2e;
+}
+
+/* Text styles */
+.testimonial-text {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.client-name {
+    color: #a1ff2e;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.client-role {
+    color: #cccccc;
+    font-size: 13px;
+    margin-top: -5px;
+}
+
+/* Bottom navigation */
+.nav-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.nav-arrow {
+    color: white;
+    font-size: 26px;
+    cursor: default;
+}
+
+/* Dots */
+.dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    margin: 0 5px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border: none;
-    transition: background-color 1s;
+    background: #ccc;
 }
 
-.carousel-indicators.custom-indicators button.active {
-    background-color: var(--main-green); /* Green active dot */
+.dot.active {
+    background: #a1ff2e;
+}
+
+
+/* --- Contact Us Form Section Styling --- */
+
+.contact-page-container {
+    /* Reduced max-width slightly to focus the content as seen in the image */
+    max-width: 800px;
+    width: 90%;
+    padding: 40px 20px;
+    /* Added display flex and alignment to center the header elements relative to the card */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; /* Centers the header and card horizontally on the page */
+}
+
+/* Header Styling - ensure the header content aligns to the left within its own container */
+.contact-header {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%; /* Important: make header span full width of the container */
+}
+
+.contact-us-title {
+    background-color: #6ee62f;
+    color: #000;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.contact-subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+    margin: 0;
+}
+
+/* Form Card Styling */
+.form-card {
+    background-color: #e8e8e3;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Card spans full width of the contact-page-container */
+}
+
+.form-card form {
+    flex: 2;
+    max-width: 500px; /* Keep form width constrained for readability */
+    z-index: 10;
+}
+
+/* Intent Radio Buttons */
+.intent-options {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.radio-label input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #555;
+    border-radius: 50%;
+    margin-right: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.radio-label input[type="radio"]:checked {
+    border-color: #a8e63a;
+}
+
+.radio-label input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #a8e63a;
+    border-radius: 50%;
+}
+
+/* Form Groups and Fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #a8e63a;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+.submit-button {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto;
+    display: block;
+    margin-top: 30px;
+}
+
+.submit-button:hover {
+    background-color: #000;
+}
+
+/* Decorative Elements Styling */
+.decorative-elements {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Big Black Star and Burst Lines */
+.star-burst {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 250px;
+    height: 250px;
+}
+
+/* Simulating the Black Star with a rotated square */
+.star-burst::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #1e1e1e;
+    transform: translate(-50%, -50%) rotate(45deg) skewX(20deg);
+    z-index: 1;
+}
+
+/* Simulating the Radial Burst */
+.star-burst::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 150%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: repeating-conic-gradient(
+        from 0deg,
+        transparent 0deg 2deg,
+        rgba(0, 0, 0, 0.2) 2deg 3deg
+    );
+    opacity: 0.6;
+    z-index: 0;
+}
+
+
+/* Small Green Star/Shape */
+.small-green-star {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #a8e63a;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .contact-page-container {
+        padding: 20px;
+    }
+    .contact-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .form-card {
+        padding: 30px;
+    }
+    .decorative-elements {
+        display: none;
+    }
+}
+
+/* Custom CSS (custom.css) */
+
+/* General Footer Styling */
+.positivus-footer {
+    background-color: #1a1a1a !important;
+    max-width: 1100px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;/* Darker than Bootstrap's bg-dark */
+    border-top-left-radius: 15px; /* Large top left radius */
+    border-top-right-radius: 15px; /* Large top right radius */
+}
+
+/* Logo Styling */
+.footer-logo {
+    /* Placeholder styles for the logo image */
+    width: 20px;
+    height: 20px;
+    background-color: #a8e63a; /* Use the bright green for a visible placeholder */
+    border-radius: 50%;
+}
+
+/* Navigation Links */
+.footer-link {
+    color: #999 !important; /* Lighter than text-white-50, for better contrast on dark gray */
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: #fff !important;
+}
+
+/* Social Icons (using Font Awesome) */
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #999; /* Light border */
+    border-radius: 50%;
+    color: #999;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+}
+
+.social-icon-circle:hover {
+    border-color: #a8e63a;
+    color: #a8e63a;
+}
+
+/* Contact Info Label */
+.contact-info-col p {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.contact-title-box {
+    background-color: #a8e63a; /* Bright green background */
+    color: #000;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-block; /* Makes the box wrap the text */
+}
+
+/* Newsletter Form */
+.newsletter-form {
+    max-width: 450px; /* Constrain the width of the form group */
+    width: 100%;
+    /* Added a dark border box around the entire form group */
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.newsletter-input {
+    background-color: #1a1a1a !important; /* Match footer background */
+    border: none !important;
+    color: #fff !important;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-top-left-radius: 8px !important;
+    border-bottom-left-radius: 8px !important;
+}
+
+.newsletter-input:focus {
+    box-shadow: none !important;
+}
+
+.subscribe-button {
+    background-color: #a8e63a !important; /* Bright green button */
+    color: #000 !important;
+    font-weight: 600 !important;
+    padding: 10px 20px !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+    border: none !important;
+    transition: background-color 0.2s;
+    font-size: 0.9rem;
+}
+
+.subscribe-button:hover {
+    background-color: #95d430 !important;
+}
+
+/* Override input group border-radius with custom one */
+.input-group {
+    border-radius: 10px;
+    overflow: hidden; /* Important for containing the button and input rounded corners */
+}
+
+/* Copyright Section */
+.copyright-text, .privacy-link {
+    font-size: 0.8rem;
+    color: #666 !important;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.privacy-link:hover {
+    color: #a8e63a !important;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 500px) {
+    .positivus-footer {
+        border-radius: 0; /* Remove radius on small screens */
+    }
+    .copyright-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .copyright-text {
+        margin-bottom: 5px !important;
+    }
+    .nav {
+        display: none !important; /* Hide nav links to save space */
+    }
+    .row.align-items-center {
+        flex-direction: column;
+    }
+    .col-md-7.d-flex.justify-content-end {
+        justify-content: center !important;
+        margin-top: 15px;
+    }
+    .contact-info-col {
+        text-align: center;
+    }
+    .contact-title-box {
+        margin: 0 auto 10px auto;
+    }
+    .newsletter-form {
+        margin: 0 auto; /* Center the newsletter form */
+    }
 }
