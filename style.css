@@ -126,7 +126,6 @@ body {
     background-color: var(--gray-card);
     /* Light Card */
 }
-
 .service-2-color,
 .service-5-color {
     background-color: var(--green-accent);
@@ -138,7 +137,7 @@ body {
 .service-6-color {
     background-color: var(--black-accent);
     /* Black Card */
-    color: #fff;
+    color: #faf9f9;
 }
 
 /* Card Title Styling */
@@ -201,9 +200,9 @@ body {
 
 /* Overall Container and Background */
 .cta-section {
-    background-color: #ffffff;
+    background-color: #f8f5f5;
     /* white background */
-    margin-top: 30px;
+    margin-top: 60px;
     /* Space it out from the section above */
     padding-top: 40px !important;
     padding-bottom: 80px !important;
@@ -227,7 +226,7 @@ body {
 .cta-button {
     /* Color to match the dark box in the image */
     background-color: #1a1a1a;
-    color: #ffffff;
+    color: #f7f3f3;
     border: none;
     font-weight: 600;
     border-radius: 10px;
@@ -580,6 +579,7 @@ body {
     font-size: 0.95rem;
     color: #343a40;
     line-height: 1.5;
+    border-top: 1px solid black;
 }
 
 /* See All Team Button */
@@ -964,10 +964,11 @@ textarea {
 /* General Footer Styling */
 .positivus-footer {
     background-color: #1a1a1a !important;
-    max-width: 1100px;
+    max-width: 950px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 15px;
+    margin-top: 100px;
+    margin-bottom: auto;
     /* Darker than Bootstrap's bg-dark */
     border-top-left-radius: 15px;
     /* Large top left radius */
