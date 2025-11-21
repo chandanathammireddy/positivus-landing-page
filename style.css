@@ -987,9 +987,9 @@ textarea {
 
 /* Navigation Links */
 .footer-link {
-    color: #999 !important;
+    color: #faf8f8 !important;
     /* Lighter than text-white-50, for better contrast on dark gray */
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     text-decoration: none;
     transition: color 0.2s;
 }
@@ -1001,10 +1001,18 @@ textarea {
 /* Social Icons (using Font Awesome) */
 .social-icons a {
     text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .social-icon-circle {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 30px;
@@ -1025,7 +1033,7 @@ textarea {
 /* Contact Info Label */
 .contact-info-col p {
     font-size: 0.9rem;
-    color: #999;
+    color: #fdf9f9;
 }
 
 .contact-title-box {
@@ -1042,23 +1050,24 @@ textarea {
 
 /* Newsletter Form */
 .newsletter-form {
-    max-width: 450px;
+    max-width: 230px;
     /* Constrain the width of the form group */
     width: 100%;
     /* Added a dark border box around the entire form group */
-    border: 2px solid #333;
+    border: 2px solid #484747;
     border-radius: 10px;
+    margin-left: 450px;
+    margin-top: -85px;
 }
 
 .newsletter-input {
     background-color: #1a1a1a !important;
     /* Match footer background */
     border: none !important;
-    color: #fff !important;
+    color: #fcfbfb !important;
     padding: 10px 15px;
     font-size: 0.9rem;
-    border-top-left-radius: 8px !important;
-    border-bottom-left-radius: 8px !important;
+    
 }
 
 .newsletter-input:focus {
@@ -1071,11 +1080,10 @@ textarea {
     color: #000 !important;
     font-weight: 600 !important;
     padding: 10px 20px !important;
-    border-top-right-radius: 8px !important;
-    border-bottom-right-radius: 8px !important;
-    border: none !important;
     transition: background-color 0.2s;
     font-size: 0.9rem;
+    align-self: flex-end !important;
+    margin-top: 60px;
 }
 
 .subscribe-button:hover {
@@ -1093,7 +1101,7 @@ textarea {
 .copyright-text,
 .privacy-link {
     font-size: 0.8rem;
-    color: #666 !important;
+    color: #fcfafa !important;
     text-decoration: none;
     transition: color 0.2s;
 }
